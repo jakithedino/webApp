@@ -138,10 +138,14 @@ if ( $this->config->profile->userid === false ) {
 			<div class="header">
 				Account Login
 			</div>
+			
+			<div style="width: 400px;">
 		
 		');
 		
 		$this->templateMakeLoginBox('mainBody');
+	
+		$this->templateModify('mainBody', '</div>');
 	
 	}
 

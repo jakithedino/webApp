@@ -9,13 +9,17 @@ $this->templateModify('mainBody', '
 		Welcome to Jaki Blue!
 	</div>
 	
-	Hi! I am <a href="https://www.realmeye.com/player/Jakisaurus" target="_new">Jakisaurus</a>. Jaki Blue is a web portal I created as a means to track information and events within the Realm community. You can mostly ignore the large login box to the right.
+	<div id="mainBodyContent">
+	
+	Hi! I am <a href="https://www.realmeye.com/player/Jakisaurus" target="_new">Jakisaurus</a>. Jaki Blue is a web portal I created as a means to track information and events within the Realm community.
 	
 	<div class="header2">
 	<br>Site Index
 	</div>
 	
-	| <a href="incs">Inc Storm Center</a> | <a href="cheaters">Cheater List</a> | <a href="scammers">Scammer List</a> |
+	| <a href="/incs">Inc Storm Center</a> | <a href="/cheaters">Cheater List</a> | <a href="/scammers">Scammer List</a> |
+	
+	</div>
 	
 ');
 

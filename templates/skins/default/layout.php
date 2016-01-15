@@ -14,14 +14,15 @@
 	a:hover { color: #FFCC00; }
 	
 	/* ids */
-	#menu1 { float: right; width: 20%; border: #FFFFFF 1px solid; margin-right: 20px; padding: 5px; }
-	#mainBody { float: left; width: 70%; padding: 5px; }
+	#menu1 { float: left; margin-left: 4px; min-width: 250px; border: #FFFFFF 1px solid; padding: 5px; }
+	#mainBody { float: left; padding: 5px; min-width: 1000px; max-width: 1000px; }
+	#mainBodyContent { background-color:#001433; padding-left: 5px; padding-right: 5px; }
 	#footer { float: left; width: 100%; margin-top: 10px; padding-top: 1px; padding-left: 1px; color: #3C6291 ; border-top: #FFFFFF solid 1px; }
 	#loginDiv {  }
 	
 	/* classes */
 	.header { font-weight: bold; font-size: 22px; padding-bottom: 2px; border-bottom: #1A00FF solid 2px; margin-bottom: 10px; }
-	.header1 { font-weight: bold; font-size: 18px; padding-bottom: 2px; border-bottom: #333333 solid 1px; margin-bottom: 10px; width: 80%; }
+	.header1 { font-weight: bold; font-size: 20px; padding-bottom: 2px; border-bottom: #FFFFFF solid 1px; margin-bottom: 5px; width: 80%; color:#4385FE; }
 	.header2 { font-weight: bold; font-size: 18px; padding-bottom: 2px; color: #8CB8FF; }
 	.menuHeaderMain { margin: 5px; padding: 2px; font-weight: bold; text-align: center; background-color: #003399; border: #0099FF solid 1px; }
 	.menuContent { margin: 5px; }
@@ -43,6 +44,9 @@
 </style>
 
 [header]
+
+<script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+
 <script language="javascript">
 [headerJs]
 </script>
@@ -50,7 +54,7 @@
 </head>
 <body>
 
-<div style="width: 100%; height: 100%;">
+<div style="width: 100%; height: 100%; min-width: 1300px; overflow: auto;">
 
 	<div id="mainBody">
 
@@ -69,6 +73,8 @@
     </div>
 
 </div>
+
+<script language="javascript" src="/js/login.js"></script>
 
 <script language="javascript">
 [bodyJs]

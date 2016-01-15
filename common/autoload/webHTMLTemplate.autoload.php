@@ -264,12 +264,13 @@ class webHTMLTemplate {
 		
 	}
 	
-	function templateMakeLoginBox($piece, $returnPiece=false) {
+	function templateMakeLoginBox($piece, $returnPiece=false, $hidden=false) {
 		
 		//  generate the pieceData
+		$hiddenPiece = ( $hidden === true ) ? 'style="display: none;"' : "";
 		$pieceData = '
 		
-			<div id="loginDiv">
+			<div id="loginDiv" ' . $hiddenPiece . '>
 		
 				<form id="loginForm" action="/login/signin.html" method="POST">
 				<div class="inputColumnsTwo">

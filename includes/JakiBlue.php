@@ -65,7 +65,10 @@ class JakiBlue {
 			$this->webSecurityRun();
 			
 			//  next we load the template which builds our base HTML
-			$this->templateLoad();
+			$this->templateLoad();			
+						
+			//  for debugging purposes; sends the profileObject to the user's JS console
+			$this->templateModify('bodyJs', "\nprofileObject = JSON.parse('" . json_encode($this->config->profile) . "'); console.log(profileObject);\n\n");
 			
 			//  if there was an accessViolation we will put the error into the error handler
 			if ( isset($this->config->profile->error) ) $this->templateModify('error1', $this->config->profile->error);

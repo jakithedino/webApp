@@ -270,7 +270,26 @@ class webSecurity {
 								$this->config->profile->username = $data->username;
 								$this->config->profile->name = $data->name;
 								$this->config->profile->email = $data->email;
-								$this->config->profile->customPerms = ( $object = json_decode($data->customPerms) ) ? $object : (object)array();
+								$this->config->profile->customPerms = ( $object = json_decode($data->customPerms) ) ? $object : (object)array('sitePerms' => (object)array(
+									'cheaters' => array(
+										'vote' => false,
+										'add' => false,
+										'edit' => false,
+										'remove' => false
+									),
+									'scammers' => array(
+										'vote' => false,
+										'add' => false,
+										'edit' => false,
+										'remove' => false
+									),
+									'incs' => array(
+										'vote' => false,
+										'add' => false,
+										'edit' => false,
+										'remove' => false
+									)
+								));
 								
 							} else {
 							
